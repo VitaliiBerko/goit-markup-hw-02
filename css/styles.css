@@ -89,6 +89,9 @@ ul {
  
 
 /* Hero */
+.hero {
+    background-color: var(--secondary-bg-color);
+}
 .hero-title {
     
 
@@ -100,11 +103,11 @@ ul {
     text-transform: uppercase;
 
     color: var(--main-bg-color);
-    background-color: var(--secondary-bg-color);
+    
 }
 
 
-button {
+.button {
     font-family: inherit;   
     font-weight: 700;
     font-size: 16px;
@@ -115,17 +118,18 @@ button {
     letter-spacing: 0.06em;
     text-transform: none;
 
-    color: var(--title-text-color);
-    background-color: var(--button-bg-color);
+    color: var(--main-bg-color);
+    background-color: var(--accent-button);
 
     cursor: pointer;
 
 }
 
-button:hover,
-button:focus {
-    color: var(--main-bg-color);
-    background-color: var(--accent-button);
+.button:hover,
+.button:focus {
+    
+    color: var(--title-text-color);
+    background-color: var(--button-bg-color);
 }
 
 /* Benefits */
@@ -229,16 +233,35 @@ button:focus {
 /* Portfolio */
 
 .filter {
+    background-color: var(--button-bg-color);
+    border-radius: 4px;
+
+       
+    font-family: 'Roboto';
     font-weight: 500;
     font-size: 16px;
-    line-height: 1.63;
+    line-height: 1.62;
+    letter-spacing: 0.03em;
     
-    text-align: center;
-            
+    border: none;
+    padding: 6px 22px;     
+     
+    color: var(--title-text-color);
+    cursor: pointer;      
 }
-.filter:active {
-    background-color: var(--main-bg-color);
+
+.filter:hover,
+.filter:focus {
+    background-color: var(--accent-color);
+    color: var(--main-bg-color);
 }
+
+
+.filter.active {
+    background-color: var(--accent-color);
+    color: var(--main-bg-color);
+}
+
 
 /* Projects */
 
