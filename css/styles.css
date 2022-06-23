@@ -437,8 +437,9 @@ display: flex;
 
 
 .list-projects .item {
-    width: calc((100%-60px)/3); 
     /* Не коректне значенн? Чому?*/
+    width: calc((100%-60px)/3); 
+    
     
     padding-bottom: 20px;
 
